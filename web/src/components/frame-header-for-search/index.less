@@ -1,0 +1,78 @@
+
+  .frame-header{
+    min-width: 980px;
+    .nav-menu{
+      position: relative;
+      z-index: 200;
+      height: 42px;
+      background-color: hsla(0,0%,100%,.4);
+      box-shadow: 0 1px 2px rgba(0,0,0,.1);
+      .nav-wrap{
+        min-width: 980px;
+        height: 42px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .nav-wrap-left{
+          display: block;
+          flex-direction: row;
+          ul{
+            display: flex;
+            height: 42px;
+            line-height: 42px;
+            li{
+              cursor: pointer;
+              margin-right: 15px;
+            }
+          }
+        }
+        .nav-wrap-right{
+          display: flex;
+          flex-direction: row;
+          ul.nav-wrap-right-list{
+            display: flex;
+            height: 42px;
+            line-height: 42px;
+            font-size: 12px;
+            li.nav-wrap-right-list-item{
+              cursor: pointer;
+              margin-right: 20px;
+              img{
+                height: 32px;
+                margin: 5px 0;
+                border-radius: 16px;
+              }
+            }
+          }
+        }
+      }
+      .nav-wrap{
+        width: 1160px;
+      }
+      @media screen and (max-width: 1400px){
+        .nav-wrap{
+          width: 980px;
+        }
+      }
+    }
+    .banner{
+      position: relative;
+      z-index: 100;
+      margin-top: -42px;
+      height: 170px;
+      background-image: url('https://i0.hdslb.com/bfs/archive/cb32825fbb67a5763f4a718230051daaf1e5c129.png');
+      background-position: center -10px;
+      background-repeat: no-repeat;
+      .banner-wrap{
+        margin: 0 auto;
+        position: relative;
+        width: 1160px;
+        height: 170px;
+      }
+      @media screen and (max-width: 1400px){
+        .banner-wrap{
+          width: 980px;
+        }
+      }
+    }
+  }
